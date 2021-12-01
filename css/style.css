@@ -74,56 +74,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body {
-    font-family: Arial, "Helvetica Nueu", Helvetica, sans-serif;
-    padding: 10px;
-    margin-left: 20px;
-    width: 1280px;
-    height: 717px;
-}
-
-
-h1 {
-    font-size: 30px;
-    color: #445161;
-}
-
-h2 {
-
-    color: #445161;
-}
-h3 {
+/*при box-sizing=border-box ширина блока включает в себя внутренний padding и border
+ и не включает внешний margin */
+.example-block{
     font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #445161;
-}
+    /*отступ (выравнивает внутри блока)*/
+    padding: 10px 20px 30px 5px;
+    /*выравнивает блок по внешним отступам*/
+    margin: 10px 20px 30px 5px;
+    /*изменяет ширину блока*/
+    width: 600px;
+    /*максимальная/имнимальная ширина блока*/
+    max-width: 600px;
+    max-height: 200px;
+    border: 2px solid #000;
 
-.text {
-    color: #333333;
-    line-height: 25px;
-}
+    overflow:  hidden;
 
-.bold {
-    color: #333333;
-    font-weight: 700;
 }
+.example-string {
+    /*изменяет поведение тэга на блочный/строковый*/
+    display: block; /*display: inline;*/
+    /*элемент остается строчным но него начинают действовать отступы и т.д */
+    display: inline-block;
+    /*временно удаляет элемент из документа и занимаемое им место не резервируется*/
+    /*display: none;*/
 
-.colorred {
-    color: #ff0000;
+    font-size: 20px;
+    /*отступ (выравнивает внутри блока)*/
+    padding: 10px 20px 30px 5px;
+    /*выравнивает блок по внешним отступам*/
+    margin: 10px 20px 30px 5px;
+    /*изменяет ширину блока*/
+    width: 600px;
+    /*максимальная/имнимальная ширина блока*/
+    max-width: 600px;
+    max-height: 200px;
+    border: 6px solid red;
 }
-.toright {
-    margin-left: 75%;
-}
-.textupper {
-    text-transform: uppercase;
-}
-.italic {
-    font-style: italic;
-}
-.underline {
-    text-decoration: underline;
-}
-.textcenter {
-    text-align: center
+.example-image {
+    display: inline-block;
+    height: 200%;
+    max-height: 300px;
+    max-width: 600px;
+    min-width: 400px;
 }
