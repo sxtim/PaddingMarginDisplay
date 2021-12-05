@@ -85,12 +85,27 @@ body {
     line-height: 24px;
     margin: 0px 0px 20px 0px;
 }
+.block p:nth-child(3):hover {
+    background-color: blueviolet;
+
+}
+/*.block:hover {*/
+/*    background-color: aquamarine;*/
+/*}*/
 .link {
  color: red;
 }
-.link:hover {
-
+.link:visited {
+    color: blueviolet;
 }
+.link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.link:active {
+    color: yellow;
+}
+
 .textinput{
     border: 1px solid #666;
     height: 50px;
@@ -99,6 +114,9 @@ body {
     width: 300px;
     margin: 0 0 10px 0;
 
+}
+.textinput:focus {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
 }
 .textbutton{
     display: block;
@@ -116,4 +134,13 @@ body {
 .list li {
     font-size: 18px;
     margin: 0 0 15px 0;
+}
+/*.list li:first-child {*/
+/*    color: antiquewhite;*/
+/*}*/
+/*.list li:first-child {*/
+/*    color: yellow;*/
+/*}*/
+.list li:nth-child(3){
+    text-decoration: underline;
 }
