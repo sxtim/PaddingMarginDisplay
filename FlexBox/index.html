@@ -13,17 +13,22 @@
 </head>
 <!-- Отображаемое тело страницы -->
 <body>
+<!--flex контейнер-->
 <div class="wrapper">
+<!--    flex элемент-->
     <div class="content">
         <div class="hi">
-            <div class="container">
+            <div class='container'>
                 <div class="hi__row">
                     <div class="hi__body">
-                        <div class="hi__title">
+                        <div class="hi__title">Пивет</div>
                             <ul class="hi__list">
-
+                                <li>У тебя все получится!</li>
+                                <li>Никогда не сдавайся!</li>
+                                <li>Сегодня ты уже знаешь больше чем вчера!</li>
+                                <li>Завтра будешь знать еще больше!</li>
                             </ul>
-                        </div>
+
                         <div class="hi__image">
                             <img src="/FlexBox/img/bg_repeat.jpg" alt="not image">
                         </div>
@@ -31,10 +36,17 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-
-        </footer>
     </div>
+<!--    flex элемент-->
+    <footer class="footer">
+        <!--            закрываем контент в контейнер-->
+        <div class='container'>
+            <!--                создаем flex контейнер-->
+            <div class="footer__row">
+                <div class="footer__text">Спасибо!</div>
+            </div>
+        </div>
+    </footer>
 </div>
 
 </body>

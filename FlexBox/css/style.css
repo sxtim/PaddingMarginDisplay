@@ -74,3 +74,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+    main-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1180px;
+    margin: 0px auto
+}
+
+
+.content {
+    -webkit-flex: 1 1 auto;
+
+
+}
+
+.hi {
+}
+
+.hi__row {
+}
+
+.hi__body {
+}
+
+.hi__title {
+}
+
+.hi__list {
+}
+
+.hi__image {
+}
+
+.footer {
+
+}
+
+.footer__row {
+}
+
+.footer__text {
+}
